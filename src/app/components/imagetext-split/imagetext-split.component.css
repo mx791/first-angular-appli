@@ -1,0 +1,22 @@
+.component {
+    background-color: #F4F6F7;
+    margin: 0px;
+}
+
+.split {
+    width: 80%;
+    max-width: 750px;
+    margin: auto;
+    display: flex;
+    padding: 4em;
+}
+
+.display-img {
+    max-width: 80%;
+    text-align: center;
+}
+
+.cont {
+    flex: 1;
+    text-align: center;
+}

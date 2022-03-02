@@ -1,0 +1,39 @@
+.hero-header {
+    width: 100%;
+    background-image: url("https://marmotamaps.com/de/fx/wallpaper/download/faszinationen/Marmotamaps_Wallpaper_Berchtesgaden_Desktop_1920x1080.jpg");
+    min-height: 150px;
+    padding-top: 7em;
+    padding-bottom: 7em;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-title {
+    max-width: 50%;
+    font-size: 3em;
+    font-weight: bold;
+    margin: auto;
+    margin-bottom: 1em;
+}
+
+.hero-description {
+    max-width: 50%;
+    margin: auto;
+    font-size: 1.3em;
+}
+
+.hero-button {
+    padding: 0.3em 1.5em 0.3em 1.5em;
+    font-size: 2em;
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 1em;
+    margin-top: 1em;
+    color: #04314F;
+}
+
+.hero-button:hover {
+    background-color: #04314F;
+    color: #fff;
+}
