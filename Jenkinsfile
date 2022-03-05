@@ -3,9 +3,7 @@ pipeline {
     
     stages {
         stage('build') {
-            steps {
-                dockerImage = docker.build("ng-app:${env.BUILD_ID}")
-            }
+            dockerImage = docker.build("ng-app:${env.BUILD_ID}")
         }
     }
 }
