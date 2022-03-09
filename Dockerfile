@@ -1,15 +1,12 @@
-FROM node
+FROM node:latest
 
 WORKDIR /usr/app
 RUN mkdir main && cd main
-COPY package.json package.json
-RUN npm i
-
 COPY . .
-RUN npm run build
+RUN npm i && npm run build
 
-FROM httpd
-
-COPY --from=0 /usr/app/main /var/www/html
-WORKDIR /var/www/html
-RUN ls  -la
+FROM nginx
+COPY --from=0 /usr/app/main /usr/share/nginx/html
+# RUN echo "hw" > /usr/share/nginx/html/index.html
+#COPY ./vhost.conf /etc/httpd/sites-available/main.conf
+COPY ./nginx.conf /etc/nginx/nginx.conf
